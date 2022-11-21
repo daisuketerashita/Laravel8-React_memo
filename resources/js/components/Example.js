@@ -43,7 +43,7 @@ function Example(){
                                 <td key={`${i}${j}`} id={day} >
                                     <div>
                                         <div>
-                                            {day}
+                                            {day > last ? day - last : day <= 0 ? prevlast + day : day}
                                         </div>
                                         <div className="schedule-area"> 
                                         </div>
